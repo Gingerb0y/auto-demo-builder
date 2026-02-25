@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Preview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">Website Preview</div>
+    <a id="payBtn" class="pay" href="#" target="_blank" rel="noopener">Get This Site</a>
+  </div>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1 id="name">Loading…</h1>
+      <p id="tagline"></p>
+      <div class="ctaRow">
+        <a id="callBtn" class="cta" href="#">Call</a>
+        <a id="quoteBtn" class="cta ghost" href="#contact">Request a Quote</a>
+      </div>
+      <p class="fine">Preview built for demonstration. Content can be edited after purchase.</p>
+    </section>
+
+    <section class="card">
+      <h2>Services</h2>
+      <ul id="services"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Areas Covered</h2>
+      <p id="area"></p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> <span id="phone"></span></p>
+      <p><strong>Address:</strong> <span id="address"></span></p>
+      <form class="form" onsubmit="event.preventDefault(); alert('This is a preview form. Goes live after purchase.');">
+        <input placeholder="Name" required />
+        <input placeholder="Phone or Email" required />
+        <textarea placeholder="What do you need help with?" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <span id="footerName"></span> · Preview Site
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
